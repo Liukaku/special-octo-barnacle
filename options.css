@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.menu-btn{
+    width: 18px;
+    float: right;
+    cursor: pointer;
+    margin-right: 4%;
+}
+
+.overlay{
+    position: absolute;
+    background: black;
+    padding: 2em;
+    width: calc(100%);
+    height: calc(100vh);
+    display: none;
+    transform: scaleX(0);
+    transform-origin: right;
+    font-family: 'Montserrat';
+    margin: 0;
+    overflow: hidden;
+}
+
+.close-btn{
+    width: 18px;
+    float: right;
+    cursor: pointer;
+    opacity: 0;
+}
+
+
+#overlay ul{
+    list-style-type: none;
+    margin: 10% auto 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    width: 80%;
+}
+
+#overlay a{
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+#overlay span{
+    color: gray;
+    display: block;
+    font-size: .75em;
+    margin-top: 20px;
+}
+
+#overlay  li{
+    opacity: 0;
+}
+
+
+.show-menu{
+    display: block;
+    animation: slide-menu 1s ease-in forwards;
+
+}
+
+.undoBtn{
+    color: white;
+    font-size: 2em;
+    float: left; 
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.show-menu .close-btn{
+    animation: show-x 1s 1s forwards;
+}
+
+.show-menu li:nth-of-type(1){
+    animation: show-x 1s 1s forwards;
+}
+.show-menu li:nth-of-type(2){
+    animation: show-x 1s 1.2s forwards;
+}
+.show-menu li:nth-of-type(3){
+    animation: show-x 1s 1.4s forwards;
+}
+.show-menu li:nth-of-type(4){
+    animation: show-x 1s 1.6s forwards;
+}
+
+
+
+@keyframes slide-menu{
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+
+@keyframes show-x{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

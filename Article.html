@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <title>News Site</title>
+
+
+    <link rel="stylesheet" href="newStyling.css">
+    <link rel="stylesheet" href="articleStyling.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+</head>
+<body onload="darkMode()">
+
+<div class="Logo">
+  <a href="News 3.html">
+    <img  src="https://i.ibb.co/BygrPVd/New-Project.png" alt="Logo Image" height="150" width="600">
+</div>
+
+
+
+<nav class="navigation">
+  <hr>
+  <ul class="nav">
+  <div class="centred">
+    <li ><a href="">Technology</a></li>
+    <li ><a href="">Science</a></li>
+    <li><a href="">Gaming</a></li>
+    <li><a href="">Art</a></li>
+    <li><a href="">Food</a></li>
+    </div>
+
+  </ul>
+ <hr>
+</nav>
+
+<div id="mailingList">
+  <span class="closebtn" id="closebtn" onclick="">&times;</span>
+  <p>
+  Sign up for our mailing list today
+  </p>
+  <br>
+
+  <!-- Button to open the modal -->
+<button  class="signUpButton" onclick="document.getElementById('id01').style.display='block'">Okay</button>
+
+
+
+</div>
+
+
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+  <div class="container">
+    <h1>Mailing List Sign Up</h1>
+    <p>Please enter your email address you wish to be contacted on</p>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <p>By registering for our mailing list you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="">Cancel</button>
+        <button type="submit" class="signup"  onclick="document.getElementById('id01').style.display='none">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<section class="parallax">
+</section>
+<section class="theMainOne">
+
+  <div class="articleContainer">
+
+  
+
+
+  <div class="featuredArticles">
+
+    <div class="featuredArticles2">
+
+      <ul class="featuredColour2">
+          <h3 class="featuredHeading">
+              Top Stories
+            </h3>
+        <li>
+          <h4 class="topStoryHeader">
+            Dog eats man and becomes dogman?
+          </h4>
+          <p class="topStoryBody">
+            Latest reports confirm that the dog has indeed obtain human DNA through eating their owner.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    
+
+
+      <ul class="featuredColour">
+          <h3 class="featuredHeading">
+              Featured Articles
+            </h3>
+        <li>
+          <img class="articleImg" src="https://st2.depositphotos.com/1166351/9578/i/950/depositphotos_95782980-stock-photo-eiffel-tower-sunny-summer-day.jpg" alt="paris">
+          <p class="imgText">
+            Paris in trouble
+          </p>
+        </li>
+        <li>
+          <p class="featuredText">
+            Etiam et nibh ut dolor fermentum luctus. Sed ut lacinia nibh, a viverra felis.
+          </p>
+        </li>
+        <li>
+          <img class="articleImg" src="https://i.kym-cdn.com/photos/images/original/001/316/888/f81.jpeg" alt="paris">
+          <p class="imgText">
+            Goldfish slept with husband?
+          </p>
+        </li>
+        <li>
+          <p class="featuredText">
+            Integer pulvinar, libero vitae scelerisque euismod, nulla velit euismod lacus
+          </p>
+        </li>
+        <li>
+          <img class="articleImg" src="https://www.motionplaces.com/wp-content/uploads/2017/11/big-sur-redwood-forest-stock-foo-1280x720.jpg" alt="">
+          <p class="imgText">
+              Suspendisse potenti          
+          </p>
+        </li>
+        <li>
+          <p class="featuredText">
+              Quisque id libero purus. Vestibulum suscipit tortor a ex pellentesque lobortis
+          </p>
+        </li>
+      </ul>
+  </div>
+
+
+  <div class="columnPrimary">
+
+    <p>
+    <strong>
+      Lorem ipsum dolor sit amet
+    </strong>
+  </p>
+
+    <p>
+      Consectetur adipiscing elit. Duis ut sapien mattis, consequat ligula id, vehicula purus. Nulla semper, nulla sit amet sagittis varius, leo urna vestibulum purus, scelerisque laoreet quam ex sit amet est. Suspendisse potenti. Mauris mauris sem, dictum pulvinar felis et, mollis sodales mi. Etiam a sollicitudin lacus. Nulla posuere, augue vitae sollicitudin ultricies, ligula risus mollis orci, a rutrum justo libero ut lorem. Nullam at ipsum tempus massa blandit rutrum. Mauris placerat bibendum justo. Suspendisse eget porta eros.
+
+      <br>
+      <br>
+
+      Nam finibus gravida ex et feugiat. Aenean facilisis tincidunt tincidunt. Donec sed aliquam ligula. Morbi sollicitudin orci et orci cursus facilisis. Donec quis erat nec libero sagittis blandit id quis justo. Nulla facilisi. Etiam nec lectus dictum, scelerisque purus non, tincidunt libero. In eu scelerisque tellus. Proin tristique, sapien at placerat ornare, dui odio varius erat, vel rutrum risus erat sed magna. Phasellus ipsum urna, viverra et nisl eget, cursus lobortis elit. Curabitur cursus felis nec lectus ultricies commodo. Sed condimentum nibh eget libero varius lobortis.
+    </p>
+
+    <ul>
+      <li>
+        <img class="articleImg" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+        <p class="imgText">
+          Source: Getty Images Ltd
+        </p>
+      </li>
+    </ul>
+
+
+    <p>
+      Duis vel rutrum magna. Sed id augue aliquet, rhoncus elit in, malesuada turpis. Nullam sodales ultrices ante eleifend egestas. Suspendisse facilisis eget purus quis elementum. Nam tincidunt fermentum elit. Quisque sed condimentum dolor. Maecenas mauris lorem, convallis sit amet augue vel, vulputate lobortis libero. Quisque id libero purus. Vestibulum suscipit tortor a ex pellentesque lobortis. Etiam et nulla ligula. Pellentesque ultrices enim at arcu feugiat aliquam. Quisque sed tellus non risus tristique malesuada. Cras iaculis mi vel efficitur interdum. Aliquam mi arcu, faucibus id enim vitae, suscipit vulputate velit. Vestibulum ultrices ullamcorper augue porttitor dictum.
+
+      <br>
+      <br>
+
+      Nullam lacus ligula, gravida sed rutrum sit amet, ornare id arcu. Quisque pellentesque lobortis felis, quis condimentum nulla placerat vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin at malesuada nisl. Suspendisse ornare odio eu purus sagittis luctus. Curabitur dignissim vehicula sem lobortis congue. Morbi dictum metus urna, ut vulputate ligula volutpat sit amet. Sed sollicitudin in odio in facilisis. Cras in odio pharetra, faucibus odio a, iaculis enim. Praesent feugiat arcu sed nibh interdum, consequat convallis est viverra. Phasellus non augue et metus pellentesque vehicula.
+    </p>
+
+
+      <ul>
+        <li>
+          <img class="articleImg" src="https://previews.123rf.com/images/choreograph/choreograph1101/choreograph110100045/8689299-a-girl-with-a-ripe-yellow-banana.jpg">
+          <p class="imgText">
+            Source: Getty Images Ltd
+          </p>
+        </li>
+      </ul>
+
+      <p>
+
+        Cras hendrerit, purus a finibus commodo, diam velit ultrices dolor, ac imperdiet nisl risus sit amet enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec feugiat justo mauris, in accumsan ligula sodales et. Sed suscipit justo elementum arcu tincidunt, nec consectetur sem ultricies. Aliquam nec nunc lacus. Nullam tempus nibh vitae rhoncus auctor. Nunc facilisis mattis arcu, at iaculis neque dictum a. In pulvinar, neque et vehicula molestie, metus dui sagittis justo, vel pretium metus ante at elit. Aliquam sollicitudin, mi quis interdum pretium, diam justo tempor risus, et congue mi urna quis augue. Cras vel quam tempor est aliquet dignissim eget vel metus.
+
+        <br>
+        <br>
+
+        Aenean non elit dictum, iaculis risus a, fermentum felis. Donec et imperdiet nunc. Sed nulla tellus, posuere commodo nunc sed, ullamcorper dictum ipsum. Proin malesuada neque vel ornare hendrerit. Integer egestas, nisi et facilisis facilisis, arcu quam fringilla tortor, ut tincidunt urna arcu sollicitudin ex. Sed bibendum eu velit non condimentum. Praesent auctor vel dolor non fermentum. Morbi vel dapibus nunc, id maximus eros. Curabitur iaculis orci vel sem interdum, et rutrum nibh aliquam. Fusce lectus mauris, malesuada non eros nec, tincidunt aliquet dui. Nam sagittis luctus nisi a iaculis.
+
+      </p>
+
+  </div>
+</div>
+
+
+</section>
+
+
+
+  <div class="container">
+    <button id="darkButton" type="button" onclick="document.getElementById('frontPage').style.backgroundColor = 'black'">Dark Mode</button>
+  </div>
+
+
+  <script src="JStest.js">
+  </script>
+
+
+
+</script>
+
+</body>
+</html>

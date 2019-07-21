@@ -1,0 +1,189 @@
+
+.parallax {
+  /* The image used */
+  background-image: url("https://thewallpaper.co/wp-content/uploads/2017/05/trees-meadow-nature-free-stock-photos-forest-fog-naturalhd-wallpapersforest-desktop-wallpapers-mac-backgrounds.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+@media screen and (min-width: 568px) {
+  .featuredArticles{
+    float: right;
+    max-width: 27%;
+    color: #000;
+    margin: 0px;
+    margin-top: 3%;
+    width: inherit;
+    word-break: break-word;
+    font-size: 0.8em;
+    display: inherit;
+  }
+}
+
+@media  screen and (max-width: 568px){
+  .featuredArticles{
+    float: right;
+    max-width: 0%;
+    color: #000;
+    padding: 0px;
+    margin: 0px;
+    width: inherit;
+    word-break: break-word;
+    font-size: 0.8em;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .featuredArticles2{
+    position: inherit;
+    float: right;
+    background: white;
+    color: #000;
+    margin: 0px;
+    margin-top: 3%;
+    margin-bottom: 7%;
+    width: inherit;
+    word-break: break-word;
+    font-size: 0.8em;
+    display: inherit;
+    
+  }
+}
+
+@media  screen and (max-width: 568px){
+  .featuredArticles2{
+    float: right;
+    max-width: 0%;
+    background: white;
+    color: #000;
+    padding: 0px;
+    margin: 0px;
+    width: inherit;
+    word-break: break-word;
+    padding: 1% 2% 1% 2%;
+    font-size: 0.8em;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .columnPrimary{
+    float: left;
+    display: inline-block;
+    width: auto;
+    max-width: 70%;
+    min-height: 200px;
+    height: 100%;
+    word-break: break-word;
+  }
+}
+
+@media  screen and (max-width: 568px){
+  .columnPrimary{
+    float: left;
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    min-height: 200px;
+    height: 100%;
+    word-break: break-word;
+  }
+}
+
+.featuredColour{
+  background: #D1DBDC;
+  padding: 2% 4% 2% 4%;
+}
+
+.featuredColour2{
+  background: #D1DBDC;
+  padding: 0px;
+  margin: 0%;
+}
+
+.spacer{
+  padding: 0px;
+  margin: 0px;
+  height: 100px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.featuredHeading{
+    font-family: arial;
+    font-size: 1.5em;
+    text-align: center;
+    background: #D1DBDC;
+    padding: 0%;
+    margin: 0%;
+}
+
+.featuredText{
+  text-align: right;
+}
+
+.topStoryHeader{
+  font-size: 1.3em;
+  font-family: Arial;
+  text-align: left;
+}
+
+.topStoryBody{
+  opacity: 0.8;
+  font-family: Arial;
+  text-align: left;
+  
+}
+
+.articleContainer {
+    margin: auto;
+    max-width: 960px;
+    width: 100%;
+    position: relative;
+    max-height: auto;
+    min-height: 100%;
+}
+
+.articleContainer strong{
+  font-size: 2em;
+}
+
+.articleImg{
+  object-fit: cover;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  max-height: 34%;
+  max-width: 100%;
+  min-width: 150px;
+}
+
+.imgText{
+  margin: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  color: #fff;
+  background-color: #000;
+  text-align: right;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0px;
+}
+
+li{
+  display: block;
+  margin: 0 auto;
+}

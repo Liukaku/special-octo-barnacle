@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <title>News Site</title>
+
+
+    <link rel="stylesheet" href="newStyling.css">
+    <link rel="stylesheet" href="options.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <nav id="overlay" class="overlay">
+        <p class="undoBtn" id="undoBtn" onclick="undoFunc()"> &#8617; </p>
+        <img src="images/power.png" class="close-btn" id="close-menu" alt="">
+      
+        <ul>
+            <li>
+                <a href="#" id="optionsObject0" onclick="menuUpdateArt()">art</a>
+                <span>hury, get back to the choppa!</span>
+            </li>
+            <li>
+                <a href="#" id="optionsObject1" onclick="menuUpdateWeb()">Web Design</a>
+                <span>hury, get back to the choppa!</span>
+            </li>
+            <li>
+                <a href="#" id="optionsObject2" onclick="menuUpdate()">Anime</a>
+                <span>hury, get back to the choppa!</span>
+            </li>
+            <li>
+                <a href="#" id="optionsObject3" onclick="menuUpdate()">Memes</a>
+                <span>hury, get back to the choppa!</span>
+            </li>
+        </ul>
+        
+      </nav>
+
+<div class="Logo">
+  <img src="https://i.ibb.co/BygrPVd/New-Project.png" alt="Logo Image" height="150" width="600">
+</div>
+
+
+<nav class="navigation">
+  <hr>
+  <ul class="nav">
+  <div class="centred">
+    <li ><a href="Article.html">Technology</a></li>
+    <li ><a href="">Science</a></li>
+    <li><a href="">Gaming</a></li>
+    <li><a href="">Art</a></li>
+    <li><a href="">Food</a></li>
+    <img src="images/menu.png" class="menu-btn" id="open-menu" alt="">
+    </div>
+
+  </ul>
+ <hr>
+</nav>
+
+<div id="mailingList">
+  <span class="closebtn" id="closebtn" onclick="hideMailing()">&times;</span>
+  <p>
+  Sign up for our mailing list today
+  </p>
+  <br>
+
+  <!-- Button to open the modal -->
+<button  class="signUpButton" onclick="document.getElementById('id01').style.display='block'">Okay</button>
+
+
+
+</div>
+
+
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+  <div class="container">
+    <h1>Mailing List Sign Up</h1>
+    <p>Please enter your email address you wish to be contacted on</p>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <p>By registering for our mailing list you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="">Cancel</button>
+        <button type="submit" class="signup"  onclick="document.getElementById('id01').style.display='none'">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<section class="frontPage" id="frontPage" style="">
+  <div class="container2">
+    <div class="articlesContainerVOID">
+	<ul class="smallArticles">
+		<li class="individuals" id="lad" style="">
+      <a href="Article.html">
+		<hr class="bigLine">
+			<img class="smallImg" data-lazy="https://media.istockphoto.com/photos/mossy-green-forest-picture-id862701348?k=6&m=862701348&s=612x612&w=0&h=Gu472GACi8pG9sZ0ICQnsqTKJTZnAGb70HS1ZN0zvFo=">
+			<div class="smallText" id="smallText">
+				<h3 class="smallH">
+					Nam finibus libero vitae
+					</h3>
+				<br>
+				<p class="author">
+				 &mdash;by Phasellus mattis
+				</p>
+		</li>
+    <li class="individuals">
+    <hr class="bigLine">
+    <a href="Article.html">
+			<img class="smallImg" data-lazy="https://media.istockphoto.com/photos/sun-shining-in-a-forest-picture-id901134626?k=6&m=901134626&s=612x612&w=0&h=IGgBDObQSrfeFOGCNiuRvJwYSLndFZPwsdivtmpj008=">
+			<div class="smallText" id="smallText">
+				<h3 class="smallH">
+					Nam finibus libero vitae
+					</h3>
+				<br>
+				<p class="author">
+				 &mdash;by Phasellus mattis
+				</p>
+		</li>
+    <li class="individuals" id="individuals" style="">
+      <a href="Article.html">
+    <hr class="bigLine">
+      <img class="smallImg" data-lazy="https://images.pexels.com/photos/158251/forest-the-sun-morning-tucholskie-158251.jpeg?cs=srgb&dl=forest-grass-nature-158251.jpg&fm=jpg">
+      <div class="smallText">
+        <h3 class="smallH">
+          Nam finibus libero vitae
+          </h3>
+        <br>
+        <p class="author">
+         &mdash;by Phasellus mattis
+        </p>
+    </li>
+    <li class="individuals">
+        <a href="Article.html">
+    <hr class="bigLine">
+      <img class="smallImg" data-lazy="https://i.ibb.co/5YTBw5m/place-Holder.png">
+      <div class="smallText">
+        <h3 class="smallH">
+          Nam finibus libero vitae
+          </h3>
+        <br>
+        <p class="author">
+         &mdash;by Phasellus mattis
+        </p>
+    </li>
+    <li class="individuals">
+        <a href="Article.html">
+    <hr class="bigLine">
+      <img class="smallImg" data-lazy="https://www.motionplaces.com/wp-content/uploads/2017/11/big-sur-redwood-forest-stock-foo-1280x720.jpg">
+      <div class="smallText">
+        <h3 class="smallH">
+          Nam finibus libero vitae
+          </h3>
+        <br>
+        <p class="author">
+         &mdash;by Phasellus mattis
+        </p>
+    </li>
+    <li class="individuals">
+        <a href="Article.html">
+    <hr class="bigLine">
+      <img class="smallImg" data-lazy="https://thewallpaper.co/wp-content/uploads/2017/05/trees-meadow-nature-free-stock-photos-forest-fog-naturalhd-wallpapersforest-desktop-wallpapers-mac-backgrounds.jpg">
+      <div class="smallText">
+        <h3 class="smallH">
+          Nam finibus libero vitae
+          </h3>
+        <br>
+        <p class="author">
+         &mdash;by Phasellus mattis
+        </p>
+    </li>
+    <li class="individuals">
+        <a href="Article.html">
+    <hr class="bigLine">
+      <img class="smallImg" data-lazy="https://previews.123rf.com/images/alexis84/alexis841505/alexis84150500350/40251822-beautiful-green-forest-background.jpg">
+      <div class="smallText">
+        <h3 class="smallH">
+          Nam finibus libero vitae
+          </h3>
+        <br>
+        <p class="author">
+         &mdash;by Phasellus mattis
+        </p>
+    </li>
+    <li class="individuals">
+        <a href="Article.html">
+    <hr class="bigLine">
+      <img class="smallImg" data-lazy="https://cdn9.dissolve.com/p/D23_60_897/D23_60_897_1200.jpg">
+      <div class="smallText">
+        <h3 class="smallH">
+          Nam finibus libero vitae
+          </h3>
+        <br>
+        <p class="author">
+         &mdash;by Phasellus mattis
+        </p>
+    </li>
+  </a>
+
+	</ul>
+  </div>
+  </div>
+  </div>
+</section>
+
+<section class="bigArticle">
+	<div class="container">
+	 <table class="bigBoi">
+	 	<tr>
+			<td class="largerImage">
+				<img class="bigImg" data-lazy="https://i.ibb.co/CMtCFWL/Shibuya.jpg" alt="oops">
+			</td>
+			<td class="bigText">
+				<h1>
+					Etiam in metus
+				</h1>
+				<p>
+					Duis faucibus maximus nulla sit
+				</p>
+			</td>
+		</tr>
+	 </table>
+	</div>
+</section>
+
+<section class="frontPage" id="frontPage" style="">
+  <div class="container2">
+	<ul class="smallArticles">
+		<li class="individuals" id="lad" style="">
+		<hr class="bigLine">
+			<img class="smallImg" data-lazy="https://media.istockphoto.com/photos/mossy-green-forest-picture-id862701348?k=6&m=862701348&s=612x612&w=0&h=Gu472GACi8pG9sZ0ICQnsqTKJTZnAGb70HS1ZN0zvFo=">
+			<div class="smallText" id="smallText">
+				<h3 class="smallH">
+					Nam finibus libero vitae
+					</h3>
+				<br>
+				<p class="author">
+				 &mdash;by Phasellus mattis
+				</p>
+		</li>
+    <li class="individuals">
+		<hr class="bigLine">
+			<img class="smallImg" data-lazy="https://media.istockphoto.com/photos/sun-shining-in-a-forest-picture-id901134626?k=6&m=901134626&s=612x612&w=0&h=IGgBDObQSrfeFOGCNiuRvJwYSLndFZPwsdivtmpj008=">
+			<div class="smallText">
+				<h3 class="smallH">
+					Nam finibus libero vitae
+					</h3>
+				<br>
+				<p class="author">
+				 &mdash;by Phasellus mattis
+				</p>
+		</li>
+    <li class="individuals" id="individuals" style="">
+    <hr class="bigLine">
+      <img class="smallImg" data-lazy="https://images.pexels.com/photos/158251/forest-the-sun-morning-tucholskie-158251.jpeg?cs=srgb&dl=forest-grass-nature-158251.jpg&fm=jpg">
+      <div class="smallText">
+        <h3 class="smallH">
+          Nam finibus libero vitae
+          </h3>
+        <br>
+        <p class="author">
+         &mdash;by Phasellus mattis
+        </p>
+    </li>
+    <li class="individuals">
+    <hr class="bigLine">
+      <img class="smallImg" data-lazy="https://i.ibb.co/5YTBw5m/place-Holder.png">
+      <div class="smallText">
+        <h3 class="smallH">
+          Nam finibus libero vitae
+          </h3>
+        <br>
+        <p class="author">
+         &mdash;by Phasellus mattis
+        </p>
+    </li>
+    <li class="individuals">
+    <hr class="bigLine">
+      <img class="smallImg" data-lazy="https://www.motionplaces.com/wp-content/uploads/2017/11/big-sur-redwood-forest-stock-foo-1280x720.jpg">
+      <div class="smallText">
+        <h3 class="smallH">
+          Nam finibus libero vitae
+          </h3>
+        <br>
+        <p class="author">
+         &mdash;by Phasellus mattis
+        </p>
+    </li>
+    <li class="individuals">
+    <hr class="bigLine">
+      <img class="smallImg" data-lazy="https://thewallpaper.co/wp-content/uploads/2017/05/trees-meadow-nature-free-stock-photos-forest-fog-naturalhd-wallpapersforest-desktop-wallpapers-mac-backgrounds.jpg">
+      <div class="smallText">
+        <h3 class="smallH">
+          Nam finibus libero vitae
+          </h3>
+        <br>
+        <p class="author">
+         &mdash;by Phasellus mattis
+        </p>
+    </li>
+    <li class="individuals">
+    <hr class="bigLine">
+      <img class="smallImg" data-lazy="https://previews.123rf.com/images/alexis84/alexis841505/alexis84150500350/40251822-beautiful-green-forest-background.jpg">
+      <div class="smallText">
+        <h3 class="smallH">
+          Nam finibus libero vitae
+          </h3>
+        <br>
+        <p class="author">
+         &mdash;by Phasellus mattis
+        </p>
+    </li>
+    <li class="individuals">
+    <hr class="bigLine">
+      <img class="smallImg" data-lazy="https://cdn9.dissolve.com/p/D23_60_897/D23_60_897_1200.jpg">
+      <div class="smallText">
+        <h3 class="smallH">
+          Nam finibus libero vitae
+          </h3>
+        <br>
+        <p class="author">
+         &mdash;by Phasellus mattis
+        </p>
+    </li>
+
+	</ul>
+  </div>
+  </div>
+</section>
+
+
+
+
+  <script src="JStest.js">  </script>
+  <script src="lazyloading.js">  </script>
+
+
+
+</script>
+
+</body>
+</html>

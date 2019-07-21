@@ -1,0 +1,466 @@
+  p{
+   font-family: arial;
+  }
+
+  h1{
+   font-family: arial;
+  }
+
+   body {
+   margin: 0;
+   padding: 0;
+   background-color: #fff;
+  }
+
+  .stopScroll {
+    overflow: hidden;
+  }
+
+
+
+   a{
+   text-decoration: none;
+   color: #000;
+   }
+
+   .container{
+   margin: auto;
+   max-width: 1720px;
+   width: 100%;
+   overflow: hidden;
+   }
+
+ .container2{
+   max-width: 100%;
+   margin: auto;
+ }
+
+   .Logo{
+     width: 100%;
+   }
+
+   .Logo img{
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   }
+
+   .navigation{
+   width: 100%;
+   }
+
+   .nav{
+   background-color: #fff;
+   width:100%;
+
+   margin-top: 0;
+   padding-top: 20px;
+ padding-left: 0;
+   }
+
+   .nav li{
+   font-family: arial;
+   display: inline;
+   margin-left: 0px;
+   margin-right:auto;
+   max-width:10%;
+    transition: 0.7s;
+    word-spacing: 2200px;
+   }
+
+ .nav ul{
+ text-align:center;
+ word-spacing: 2200px;
+ }
+
+   .nav li:hover{
+ text-decoration: underline;
+ }
+
+   .centred{
+ margin-top: 0;
+ padding-top: 0;
+   padding-left: 82px;
+ text-align: center;
+ word-spacing: 80px;
+   }
+
+   .navigation hr{
+   width: 100%;
+ padding: 0;
+ margin: 0;
+   }
+
+   #mailing{
+   margin-top: 0;
+   padding-top: 0;
+ display:;
+   }
+
+   #mailingList{
+   font-family: arial;
+   font-size: 15px;
+   color: #fff;
+   background-color: #000;
+   height: 35px;
+   margin-top: 0;
+   padding-top: 0;
+ text-align: center;
+   }
+
+   #mailingList p{
+   display: inline;
+   max-width: 100px;
+   margin-left: auto;
+   margin-right: auto;
+   float: inherit;
+   }
+
+  .closebtn {
+     margin-left: 15px;
+   color: white;
+   font-weight: bold;
+   float: right;
+   font-size: 22px;
+   line-height: 20px;
+   cursor: pointer;
+   transition: 0.3s;
+   }
+
+ .closebtn:hover {
+   color: red;
+ }
+
+ .frontPage{
+ background-color: #f9f9f9;
+ }
+
+ #frontPage{
+ background-color: #f9f9f9;
+ }
+
+ .frontPage p {
+ }
+
+ .frontPage h3 {
+
+ }
+
+ .article{
+   max-width: 337px;
+   max-height: 400px;
+    display: ;
+ }
+
+ #smallText{
+ color: black;
+ }
+
+ .smallArticles{
+
+       /* text-align: center; */
+       /* list-style-type: none; */
+        margin-right: 30px;
+        max-width: 100%;
+       /* min-width: 50%; */
+       /* max-height: 1720px; */
+       /* float: left; */
+       /* overflow: hidden; */
+       display: inline-block;
+       vertical-align: top;
+       columns: 4 10em;
+       width: 97vw;
+
+
+ }
+
+ .smallArticles li{
+   margin: 15px 0px 15px 0px;
+   padding: 0 10px 0 10px;
+   float: left;
+   clear: both;
+   display: inline-block;
+ }
+
+   .smallArticles img{
+     transition: 0.7s;
+     object-fit: cover;
+     object-position: 72%;
+     max-height: 34%;
+     max-width: 100%;
+     min-width: 150px;
+     height: 303px;
+     width: 1000px;
+   }
+
+   .individuals{
+     display: inline-block;
+     -moz-page-break-inside: avoid;
+     -webkit-column-break-inside: avoid;
+     break-inside: avoid;
+     -o-column-break-inside: avoid;
+     -ms-column-break-inside: avoid;
+     column-break-inside: avoid;
+     page-break-inside: avoid;
+   }
+
+   .smallImg{
+   }
+
+   .smallImg:hover{
+ opacity: 0.7;
+ }
+
+
+
+
+ .smallArticles li{
+   display: ;
+ }
+
+ .bigArticle{
+   background-color: #f9f9f9;
+     }
+
+ .bigArticle table{
+   background-color: #fff;
+ }
+
+ .bigArticle:hover{
+   text-decoration: underline;
+ }
+
+ .bigText{
+   text-align: center;
+ }
+
+ .smallRule{
+   width: 25px;
+   float: left;
+   color: #000;
+ }
+
+
+ /*this controls the screen size changing stuff*/
+     @media screen and (min-width: 671px) {
+     .smallH {
+       font-size: 25px;
+     }
+
+     .author{
+       font-size: 20px;
+     }
+   }
+
+   @media screen and (max-width: 670px) {
+     .smallH {
+       font-size: 20px;
+     }
+     .author{
+       font-size: 15px;
+     }
+   }
+   /*---------------------------------------------------*/
+
+
+   .smallText{
+     padding: 0px;
+     margin: 0px;
+   }
+
+   .smallH{
+     padding: 0px;
+     margin: 0px;
+     margin-top: 2%;
+     float: left;
+   }
+
+   .author{
+     padding: 0px;
+     margin: 0px;
+     margin-top: 6%;
+     float: left;
+   }
+
+ .bigBoi{
+   margin: 0 0 0 4%;
+   margin-right:  inherit;
+   max-width: 100%;
+   text-align: center;
+   min-width: 80%
+ }
+
+ .bigLine{
+   border: .7px solid black;
+ }
+
+ .smallLine{
+   border: .3px solid black;
+   width: 20%;
+   float: left;
+ }
+
+ .largerImage{
+   margin: 0px;
+   padding: 0px;
+ }
+
+ /*this is for the registration form */
+
+* {box-sizing: border-box}
+/* Full-width input fields */
+ input[type=text], input[type=password] {
+ width: 100%;
+ padding: 15px;
+ margin: 5px 0 22px 0;
+ display: inline-block;
+ border: none;
+ background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+ background-color: #ddd;
+ outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+ background-color: #000;
+ color: white;
+ padding: 0;
+ margin:  0;
+ border: none;
+ cursor: pointer;
+ width: 100%;
+ opacity: 0.9;
+}
+
+button:hover {
+ opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+ padding: 14px 20px;
+ background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+ float: left;
+ width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+ padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+ text-align: center;
+ display: none; /* Hidden by default */
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Sit on top */
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */
+ background-color: #474e5d;
+ padding-top: 50px;
+ /* Fallback for web browsers that don't support RGBa */
+   background-color: rgb(0, 0, 0);
+   /* RGBa with 0.6 opacity */
+   background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+text-align: center;
+ background-color: #fefefe;
+ margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+ border: 1px solid #888;
+ width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content input{
+ width: 50%;
+}
+
+ .modal-content button{
+   width: 10%;
+ }
+
+/* Style the horizontal ruler */
+hr {
+ border: 1px solid #f1f1f1;
+ margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+ position: absolute;
+ right: 35px;
+ top: 15px;
+ font-size: 40px;
+ font-weight: bold;
+ color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+ color: #f44336;
+ cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+ content: "";
+ clear: both;
+ display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+ .cancelbtn, .signupbtn {
+   width: 100%;
+ }
+}
+
+/*controls the sizing depending on screen size */
+
+       @media screen and (min-width: 900px) {
+         .bigImg{
+           min-height: auto;
+         object-fit: cover;
+         min-width: 1000px;
+         max-height: 112%;
+         }
+       }
+
+       @media  screen and (width: 568px){
+       .bigImg {
+           min-height: auto;
+           object-fit: cover;
+           min-width: 100px;
+           max-height: 112%;
+       }
+     }
+
+     @media  screen and (max-width: 568px){
+     .largerImage {
+         min-height: auto;
+         min-width: 100px;
+         max-height: 112%;
+     }
+   }
+/* end of screen size thing */
+
+.articlesContainer{
+  -moz-column-count: 4;
+  -webkit-column-count: 4;
+  column-count: 4;
+}
