@@ -8,56 +8,57 @@
 
     <link rel="stylesheet" href="newStyling.css">
     <link rel="stylesheet" href="options.css">
+    <link rel="stylesheet" href="darkModeColours.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 </head>
-<body>
+<body onload="isItDarkOut()" id="bodyCol">
 
-    <nav id="overlay" class="overlay">
+    <nav id="overlay" class="overlay display-block">
         <p class="undoBtn" id="undoBtn" onclick="undoFunc()"> &#8617; </p>
         <img src="images/power.png" class="close-btn" id="close-menu" alt="">
       
         <ul>
             <li>
                 <a href="#" id="optionsObject0" onclick="menuUpdateArt()">art</a>
-                <span>hury, get back to the choppa!</span>
+                <span>interesting art</span>
             </li>
             <li>
                 <a href="#" id="optionsObject1" onclick="menuUpdateWeb()">Web Design</a>
-                <span>hury, get back to the choppa!</span>
+                <span>design inspiration</span>
             </li>
             <li>
                 <a href="#" id="optionsObject2" onclick="menuUpdate()">Anime</a>
-                <span>hury, get back to the choppa!</span>
+                <span>anime...</span>
             </li>
             <li>
                 <a href="#" id="optionsObject3" onclick="menuUpdate()">Memes</a>
-                <span>hury, get back to the choppa!</span>
+                <span>Some memes i guess</span>
             </li>
         </ul>
         
       </nav>
 
 <div class="Logo">
-  <img src="https://i.ibb.co/BygrPVd/New-Project.png" alt="Logo Image" height="150" width="600">
+  <img id="headerIMG" src="https://i.ibb.co/BygrPVd/New-Project.png" alt="Logo Image" height="150" width="600">
 </div>
 
 
 <nav class="navigation">
-  <hr>
-  <ul class="nav">
+  <hr id="articHR1">
+  <ul id="navList" class="nav">
   <div class="centred">
-    <li ><a href="Article.html">Technology</a></li>
-    <li ><a href="">Science</a></li>
-    <li><a href="">Gaming</a></li>
-    <li><a href="">Art</a></li>
-    <li><a href="">Food</a></li>
+    <li ><a id="navLinks1" href="">Technology</a></li>
+    <li ><a id="navLinks2" href="">Science</a></li>
+    <li><a id="navLinks3" href="">Gaming</a></li>
+    <li><a id="navLinks4" href="">Art</a></li>
+    <li><a id="navLinks5" href="">Food</a></li>
     <img src="images/menu.png" class="menu-btn" id="open-menu" alt="">
     </div>
 
   </ul>
- <hr>
+ <hr id="articHR2">
 </nav>
 
 <div id="mailingList">
@@ -99,7 +100,7 @@
 
 <section class="frontPage" id="frontPage" style="">
   <div class="container2">
-    <div class="articlesContainerVOID">
+    <div class="articlesContainerVOID" id="articles-container-void">
 	<ul class="smallArticles">
 		<li class="individuals" id="lad" style="">
       <a href="Article.html">
@@ -127,11 +128,11 @@
 				 &mdash;by Phasellus mattis
 				</p>
 		</li>
-    <li class="individuals" id="individuals" style="">
+    <li class="individuals" id="individuals">
       <a href="Article.html">
     <hr class="bigLine">
       <img class="smallImg" data-lazy="https://images.pexels.com/photos/158251/forest-the-sun-morning-tucholskie-158251.jpeg?cs=srgb&dl=forest-grass-nature-158251.jpg&fm=jpg">
-      <div class="smallText">
+      <div class="smallText" id="smallText">
         <h3 class="smallH">
           Nam finibus libero vitae
           </h3>
@@ -144,7 +145,7 @@
         <a href="Article.html">
     <hr class="bigLine">
       <img class="smallImg" data-lazy="https://i.ibb.co/5YTBw5m/place-Holder.png">
-      <div class="smallText">
+      <div class="smallText" id="smallText">
         <h3 class="smallH">
           Nam finibus libero vitae
           </h3>
@@ -157,7 +158,7 @@
         <a href="Article.html">
     <hr class="bigLine">
       <img class="smallImg" data-lazy="https://www.motionplaces.com/wp-content/uploads/2017/11/big-sur-redwood-forest-stock-foo-1280x720.jpg">
-      <div class="smallText">
+      <div class="smallText" id="smallText">
         <h3 class="smallH">
           Nam finibus libero vitae
           </h3>
@@ -170,7 +171,7 @@
         <a href="Article.html">
     <hr class="bigLine">
       <img class="smallImg" data-lazy="https://thewallpaper.co/wp-content/uploads/2017/05/trees-meadow-nature-free-stock-photos-forest-fog-naturalhd-wallpapersforest-desktop-wallpapers-mac-backgrounds.jpg">
-      <div class="smallText">
+      <div class="smallText" id="smallText">
         <h3 class="smallH">
           Nam finibus libero vitae
           </h3>
@@ -183,7 +184,7 @@
         <a href="Article.html">
     <hr class="bigLine">
       <img class="smallImg" data-lazy="https://previews.123rf.com/images/alexis84/alexis841505/alexis84150500350/40251822-beautiful-green-forest-background.jpg">
-      <div class="smallText">
+      <div class="smallText" id="smallText">
         <h3 class="smallH">
           Nam finibus libero vitae
           </h3>
@@ -196,7 +197,7 @@
         <a href="Article.html">
     <hr class="bigLine">
       <img class="smallImg" data-lazy="https://cdn9.dissolve.com/p/D23_60_897/D23_60_897_1200.jpg">
-      <div class="smallText">
+      <div class="smallText" id="smallText">
         <h3 class="smallH">
           Nam finibus libero vitae
           </h3>
@@ -213,10 +214,11 @@
   </div>
 </section>
 
-<section class="bigArticle">
+<section class="bigArticle" id="largeTickle">
 	<div class="container">
-	 <table class="bigBoi">
-	 	<tr>
+	 <table class="bigBoi" id="pleaseWork" >
+     <tbody id="">
+	 	<tr id="ohYeah">
 			<td class="largerImage">
 				<img class="bigImg" data-lazy="https://i.ibb.co/CMtCFWL/Shibuya.jpg" alt="oops">
 			</td>
@@ -228,13 +230,14 @@
 					Duis faucibus maximus nulla sit
 				</p>
 			</td>
-		</tr>
+    </tr>
+  </tbody>
 	 </table>
 	</div>
 </section>
 
 <section class="frontPage" id="frontPage" style="">
-  <div class="container2">
+  <div class="container2" id="lower">
 	<ul class="smallArticles">
 		<li class="individuals" id="lad" style="">
 		<hr class="bigLine">
@@ -251,7 +254,7 @@
     <li class="individuals">
 		<hr class="bigLine">
 			<img class="smallImg" data-lazy="https://media.istockphoto.com/photos/sun-shining-in-a-forest-picture-id901134626?k=6&m=901134626&s=612x612&w=0&h=IGgBDObQSrfeFOGCNiuRvJwYSLndFZPwsdivtmpj008=">
-			<div class="smallText">
+			<div class="smallText" id="smallText">
 				<h3 class="smallH">
 					Nam finibus libero vitae
 					</h3>
@@ -275,7 +278,7 @@
     <li class="individuals">
     <hr class="bigLine">
       <img class="smallImg" data-lazy="https://i.ibb.co/5YTBw5m/place-Holder.png">
-      <div class="smallText">
+      <div class="smallText" id="smallText">
         <h3 class="smallH">
           Nam finibus libero vitae
           </h3>
@@ -287,7 +290,7 @@
     <li class="individuals">
     <hr class="bigLine">
       <img class="smallImg" data-lazy="https://www.motionplaces.com/wp-content/uploads/2017/11/big-sur-redwood-forest-stock-foo-1280x720.jpg">
-      <div class="smallText">
+      <div class="smallText" id="smallText">
         <h3 class="smallH">
           Nam finibus libero vitae
           </h3>
@@ -299,7 +302,7 @@
     <li class="individuals">
     <hr class="bigLine">
       <img class="smallImg" data-lazy="https://thewallpaper.co/wp-content/uploads/2017/05/trees-meadow-nature-free-stock-photos-forest-fog-naturalhd-wallpapersforest-desktop-wallpapers-mac-backgrounds.jpg">
-      <div class="smallText">
+      <div class="smallText" id="smallText">
         <h3 class="smallH">
           Nam finibus libero vitae
           </h3>
@@ -311,7 +314,7 @@
     <li class="individuals">
     <hr class="bigLine">
       <img class="smallImg" data-lazy="https://previews.123rf.com/images/alexis84/alexis841505/alexis84150500350/40251822-beautiful-green-forest-background.jpg">
-      <div class="smallText">
+      <div class="smallText" id="smallText">
         <h3 class="smallH">
           Nam finibus libero vitae
           </h3>
@@ -323,7 +326,7 @@
     <li class="individuals">
     <hr class="bigLine">
       <img class="smallImg" data-lazy="https://cdn9.dissolve.com/p/D23_60_897/D23_60_897_1200.jpg">
-      <div class="smallText">
+      <div class="smallText" id="smallText">
         <h3 class="smallH">
           Nam finibus libero vitae
           </h3>
@@ -335,6 +338,11 @@
 
 	</ul>
   </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <button id="darkButton" type="button" onclick="darkMode()">Dark Mode</button>
   </div>
 </section>
 

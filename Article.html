@@ -8,32 +8,33 @@
 
     <link rel="stylesheet" href="newStyling.css">
     <link rel="stylesheet" href="articleStyling.css">
+    <link rel="stylesheet" href="darkModeColours.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 
 </head>
-<body onload="darkMode()">
+<body onload="isItDarkOut()" id="bodyCol">
 
 <div class="Logo">
   <a href="News 3.html">
-    <img  src="https://i.ibb.co/BygrPVd/New-Project.png" alt="Logo Image" height="150" width="600">
+    <img id="headerIMG"  src="https://i.ibb.co/BygrPVd/New-Project.png" alt="Logo Image" height="150" width="600">
 </div>
 
 
 
-<nav class="navigation">
-  <hr>
-  <ul class="nav">
+<nav class="navigation" id="navBar">
+  <hr id="articHR1">
+  <ul class="nav" id="navList">
   <div class="centred">
-    <li ><a href="">Technology</a></li>
-    <li ><a href="">Science</a></li>
-    <li><a href="">Gaming</a></li>
-    <li><a href="">Art</a></li>
-    <li><a href="">Food</a></li>
+    <li ><a id="navLinks1" href="">Technology</a></li>
+    <li ><a id="navLinks2" href="">Science</a></li>
+    <li><a id="navLinks3" href="">Gaming</a></li>
+    <li><a id="navLinks4" href="">Art</a></li>
+    <li><a id="navLinks5" href="">Food</a></li>
     </div>
 
   </ul>
- <hr>
+ <hr id="articHR2">
 </nav>
 
 <div id="mailingList">
@@ -82,12 +83,12 @@
   
 
 
-  <div class="featuredArticles">
+  <div class="featuredArticles" id="featured-articles">
 
-    <div class="featuredArticles2">
+    <div class="featuredArticles2" id="featured-articles2">
 
-      <ul class="featuredColour2">
-          <h3 class="featuredHeading">
+      <ul class="featuredColour2" id="featured-Colour2">
+          <h3 class="featuredHeading" id="featured-Heading">
               Top Stories
             </h3>
         <li>
@@ -104,8 +105,8 @@
     
 
 
-      <ul class="featuredColour">
-          <h3 class="featuredHeading">
+      <ul class="featuredColour" id="featured-Colour">
+          <h3 class="featuredHeading2" id="featured-Heading2">
               Featured Articles
             </h3>
         <li>
@@ -162,9 +163,11 @@
       Nam finibus gravida ex et feugiat. Aenean facilisis tincidunt tincidunt. Donec sed aliquam ligula. Morbi sollicitudin orci et orci cursus facilisis. Donec quis erat nec libero sagittis blandit id quis justo. Nulla facilisi. Etiam nec lectus dictum, scelerisque purus non, tincidunt libero. In eu scelerisque tellus. Proin tristique, sapien at placerat ornare, dui odio varius erat, vel rutrum risus erat sed magna. Phasellus ipsum urna, viverra et nisl eget, cursus lobortis elit. Curabitur cursus felis nec lectus ultricies commodo. Sed condimentum nibh eget libero varius lobortis.
     </p>
 
-    <ul>
+    <ul id="notifier">
+      <li class="sneakyOne" id="sneaky"></li>
       <li>
-        <img class="articleImg" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+        <!--<img class="articleImg" id="article-img" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">-->
+        <img class="articleImg" id="article-img" src="https://media1.giphy.com/media/LW5vBvAb48Oe9OoEKT/source.gif">
         <p class="imgText">
           Source: Getty Images Ltd
         </p>
@@ -182,9 +185,10 @@
     </p>
 
 
-      <ul>
+      <ul id="notifier2">
+        <li class="sneakyOne" id="sneaky2"></li>
         <li>
-          <img class="articleImg" src="https://previews.123rf.com/images/choreograph/choreograph1101/choreograph110100045/8689299-a-girl-with-a-ripe-yellow-banana.jpg">
+          <img class="articleImg" id="article-img2" src="https://previews.123rf.com/images/choreograph/choreograph1101/choreograph110100045/8689299-a-girl-with-a-ripe-yellow-banana.jpg">
           <p class="imgText">
             Source: Getty Images Ltd
           </p>
@@ -211,11 +215,13 @@
 
 
   <div class="container">
-    <button id="darkButton" type="button" onclick="document.getElementById('frontPage').style.backgroundColor = 'black'">Dark Mode</button>
+    <button id="darkButton" type="button" onclick="darkMode()">Dark Mode</button>
   </div>
 
 
   <script src="JStest.js">
+  </script>
+  <script src="articleJS.js">
   </script>
 
 

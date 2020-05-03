@@ -19,7 +19,6 @@ const imgOptions = {
 const imgObserver = new IntersectionObserver((entries,
      imgObserver) => {
     entries.forEach(entry => {
-        console.log('😍');
         if (!entry.isIntersecting) {
             return;
         } else {
@@ -32,3 +31,4 @@ const imgObserver = new IntersectionObserver((entries,
 images.forEach(image => {
     imgObserver.observe(image);
 })
+
